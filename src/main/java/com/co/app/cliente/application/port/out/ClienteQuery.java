@@ -12,7 +12,7 @@ public interface ClienteQuery {
 
     public ClienteDto crearCliente(ClienteDto clienteDto);
 
-    public Integer actualizarCliente(ClienteDto clienteDto);
+    public int actualizarCliente(ClienteDto clienteDto);
 
     public Integer actualizarEstadoCliente(String estado, Integer idcliente);
 

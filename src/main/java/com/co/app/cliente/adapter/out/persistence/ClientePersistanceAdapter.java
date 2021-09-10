@@ -72,11 +72,7 @@ public class ClientePersistanceAdapter implements ClienteQuery {
 
     @Transactional
     @Override
-    public Integer actualizarCliente(ClienteDto clienteDto) {
-
-        System.out.println("----------------------------------------------------------------------------->");
-        System.out.println("cliente: " + clienteDto);
-        System.out.println("----------------------------------------------------------------------------->");
+    public int actualizarCliente(ClienteDto clienteDto) {
 
         return clienteRepositoryJpa.actualizarCliente(
                 clienteDto.getNombre(),

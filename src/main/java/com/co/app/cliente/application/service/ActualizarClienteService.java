@@ -33,10 +33,7 @@ public class ActualizarClienteService implements ActualizarClienteUseCase {
                 imagenQuery.actualizarImagen(imagenDto);
             }
         }
-
-        // Actualizar Producto General
         clienteQuery.actualizarCliente(clienteDto);
-
-        return null;
+        return clienteDto;
     }
 }
